@@ -241,7 +241,7 @@ body{
 .image-questions{
     display: flex;
     justify-content: center;
-    background-image: url("/imgs/imagen-preguntas.jpg");
+    background-image: url("../imgs/imagen-preguntas.jpg");
 }
 
 .questions-container{
