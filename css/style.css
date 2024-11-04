@@ -116,10 +116,7 @@ body{
     margin-bottom: 70px;
     width: 100%;
     max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    overflow: hidden;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -296,6 +293,12 @@ body{
     align-items: center;
     width: 300px;
     font-size: 14px;
+}
+a{
+    color: white;
+}
+a:visited{
+    color: white;
 }
 
 @media screen and (max-width: 480px){
