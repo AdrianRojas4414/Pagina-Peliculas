@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(1, 1, 1);
+}
+
+.header-image{
+    background-image: url("/imgs/cinema-room-background.jpg");
+    display: flex;
+    width: 100;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Contenedor-header {
+    display: flex;
+    padding: 15px;
+    position: absolute;
+    width: 96vw;
+    align-items: center;
+    justify-content: center;
+}
+.Contenedor-header .space1{
+    width: 0px;
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+}
+.Contenedor-header .space2{
+    width: 650px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items: center;
+    width: 400px;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+.item1{
+    padding: 15px;
+}
+.item2{
+    padding: 15px;
+}
+.item3{
+    padding: 15px;
+}
+.item4{
+    padding: 15px;
+}
+.item5{
+    border:1px solid white;
+    padding: 15px 32px 15px 32px;
+}
+
+.page-space1{
+    color: white;
+    font-size: 2rem;
+    padding-top: 200px;
+}
+
+.linea-separadora{
+    width: 90px;
+    height: 2px;
+    background-color: rgb(255, 217, 54);
+    margin-top:0;
+    align-self: center;
+}
+
+.category-tittle{
+    color: rgb(255, 217, 54);
+    font-size: 2rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.carousel-container {
+    margin-top: 0px;
+    margin-bottom: 70px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.carousel {
+    display:flex;
+}
+
+.slide {
+    scroll-snap-align: center;
+    min-width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  max-height: 70%;
+  object-fit:contain;
+  border-radius: 3px;
+  border: 15px;
+}
+
+.movie-title {
+  font-size: 1.5em;
+  margin: 10px 0 5px;
+  color:white;
+  font-weight:bolder;
+}
+
+.movie-summary {
+  font-size: 1em;
+  color: white;
+}
+
+.footer-container{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+}
+.footer-container ul{
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items: center;
+    width: 300px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 480px){
+    .menu{
+        flex-direction: column;
+    }
+
+    .header-image{
+        background-position: bottom;
+        height: 400px;
+    }
+
+    .carousel-container {
+        height: 90vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .slide {
+        min-width: 50%;
+        min-height: 50%;
+        scroll-snap-align: start;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
